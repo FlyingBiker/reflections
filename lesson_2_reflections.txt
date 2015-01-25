@@ -5,5 +5,25 @@ So you can track your changes, see the difference between the commits and use it
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The working directory and repository show all the files in that directory. The staging area allows you to select multiple related files to be staged for a single commit so you don't have to do a commit on each file.
+The working directory shows all the files in that directory.  The repository shows the commits for those files. The staging area allows you to select multiple related files to be staged for a single commit so you don't have to do a commit on each file.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+YOu can use git diff --staged to see the changes you've made and then decide if you want to commit or not.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When you want to try something new, it gives you the option of reverting back if it doesn't work out.  Branchin gis also helpful when you want to create a new, parallel version, such as the different language example.
+
+How do the diagrams help you visualize the branch structure?
+
+They help you visualize the branch structure so you can see how differnt commits are related.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The merged files now become one, combining the changes made to both.  The diagram representation lists the commits for each and mimics the results of doing a git log --graph  --oneline.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Since git can tell if the code changed in each branch is the same code or different, it's easier to leave it up to git to flag when the same code in each branch has been changed.  Then one can review each and manually merge the branches.  Otherwise, let git automatically perform the merge.  Doing it manually each time is a sink-hole for time as you'd have to review the changes in each branch everytime.  Not an efiicient use of time, or git.
 
