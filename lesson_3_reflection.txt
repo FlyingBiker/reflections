@@ -6,3 +6,9 @@ Why might you want to always pull changes manually rather than having Git automa
 
 You may make several commits to your code before it's ready, so it makes more sense to manually push or pull your code when you know it's ready.
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks are copies of another's GitHub repository that you can now go in and update in GitHub without affecting the other's GutHub respoitory.
+Clones are similar, but are copies of repositories made from one machine to another.
+Branches are new labeled paths off the master branch where commits are tracked while doing work that you don't want saved to the master just yet.
+
